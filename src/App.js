@@ -6,6 +6,7 @@ import Cart from "./Components/cart";
 import Login from "./login";
 import RegistrationForm from "./Registration";
 import MainBody from "./Components/mainbody";
+import Logout from "./Components/logout";
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
         <Route path="/register" element={<RegistrationForm />} />
         <Route path="/login" element={<Login />} />
         <Route path="/cart" element={<Cart />} />
+        <Route path="/logout" element={<Logout />} />
       </Routes>
     // <div>
     //   <MainLayout />

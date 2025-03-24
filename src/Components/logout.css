@@ -1,0 +1,31 @@
+.background-radial-gradient {
+    background-size: cover;
+    height: 100vh;
+    background-color: #c4dfdf;
+    background-image: radial-gradient(650px circle at 0% 0%, #c4dfdf 15%, #d2e9e9 35%, #e3f4f4 75%, #f8f6f4 80%, transparent 100%),
+      radial-gradient(1250px circle at 100% 100%, #c4dfdf 15%, #d2e9e9 35%, #e3f4f4 75%, #f8f6f4 80%, transparent 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+  }
+  
+  h1 {
+    font-size: 50px;
+    margin-bottom: 20px;
+    color: #000;
+    font: 700 normal 3.0em 'tahoma';
+  }
+  
+  p {
+    font-size: 1.5rem;
+    color: #000;
+  }
+  
