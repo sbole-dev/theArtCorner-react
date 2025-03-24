@@ -1,0 +1,105 @@
+.background-radial-gradient {
+    background-color: #C4DFDF;
+    background-image: radial-gradient(650px circle at 0% 0%,
+        #C4DFDF 15%,
+        #D2E9E9 35%,
+        #E3F4F4 75%,
+        #F8F6F4 80%,
+        transparent 100%),
+      radial-gradient(1250px circle at 100% 100%,
+        #C4DFDF 15%,
+        #D2E9E9 35%,
+        #E3F4F4 75%,
+        #F8F6F4 80%,
+        transparent 100%);
+}
+
+button {
+    background-color: #F8F6F4;
+    color: black;
+}
+
+button:hover {
+    color: white;
+    background-color: black;
+    transition: 0.4s ease;
+}
+
+.row label {
+    color: black;
+    font-weight: 500;
+}
+
+.row {
+    display: flex;
+    text-align: left;
+    row-gap: 5px;
+    align-items: flex-start;
+}
+
+.bg-glass {
+    background-color: #C4DFDF !important;
+    backdrop-filter: saturate(200%) blur(25px);
+}
+
+.reveal-text,
+.reveal-text::after {
+    animation-delay: var(--animation-delay, 2s);
+    animation-iteration-count: var(--iterations, 1);
+    animation-duration: var(--duration, 800ms);
+    animation-fill-mode: both;
+    animation-timing-function: cubic-bezier(0.0, 0.0, 0.2, 1);
+}
+
+.reveal-text {
+    --animation-delay: var(--delay, 0);
+    --animation-duration: var(--duration, 800ms);
+    --animation-iterations: var(--iterations, 1);
+    position: relative;
+    font-size: 4.3vw;
+    animation-name: clip-text;
+    color: #687d7d;
+    white-space: nowrap;
+    cursor: default;
+}
+
+.reveal-text::after {
+    content: "";
+    position: absolute;
+    z-index: 999;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #F8F6F4;
+    transform: scaleX(0);
+    transform-origin: 0 50%;
+    pointer-events: none;
+    animation-name: text-revealer;
+}
+
+@keyframes clip-text {
+    from {
+        clip-path: inset(0 100% 0 0);
+    }
+    to {
+        clip-path: inset(0 0 0 0);
+    }
+}
+
+@keyframes text-revealer {
+    0%,
+    50% {
+        transform-origin: 0 50%;
+    }
+    60%,
+    100% {
+        transform-origin: 100% 50%;
+    }
+    60% {
+        transform: scaleX(1);
+    }
+    100% {
+        transform: scaleX(0);
+    }
+}

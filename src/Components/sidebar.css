@@ -1,0 +1,26 @@
+body{
+    background-color: rgb(227, 244, 244); 
+  
+}
+.nav-link, .nav-item {
+ 
+   color: #037e7e;
+   transition: background-color 0.3s ease;
+   font-size: larger;
+   padding: 10px 0;
+}
+a:hover {
+   color: #C4DFDF;
+   cursor: pointer;
+}
+
+body {
+   background-color: rgb(248, 246, 244);
+   font-family: Arial, sans-serif;
+}
+
+button{
+   font-size: 25px;
+   margin-top: 50px;
+   
+}

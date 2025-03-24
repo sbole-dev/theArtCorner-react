@@ -1,0 +1,617 @@
+{
+    "users": [
+      {
+        "uname": "Mansi",
+        "pwd": "mansimansi",
+        "email": "mansikortikar@gmail.com",
+        "address": "flat no.3",
+        "contact": "9322093571",
+        "id": "2b4a"
+      },
+      {
+        "uname": "Jui",
+        "pwd": "juijui",
+        "email": "juinaik@gmail.com",
+        "address": "flat no.4",
+        "contact": "9370813362",
+        "id": "2ccf"
+      },
+      {
+        "uname": "Sritika",
+        "pwd": "sritika",
+        "email": "sritikamanjrekar@gmail.com",
+        "address": "flat no.3",
+        "contact": "9322093571",
+        "id": "8e39"
+      },
+      {
+        "id": "e903",
+        "uname": "Vidhi",
+        "address": "C-102. the laal street, mumbai",
+        "contact": "1234567865",
+        "email": "abc@gmail.com",
+        "pwd": "witch123"
+      },
+      {
+        "id": "e410",
+        "uname": "sakshi",
+        "address": "deloitte towers",
+        "contact": "1234567890",
+        "email": "sbole@deloitte.com",
+        "pwd": "sakshi"
+      },
+      {
+        "id": "f747",
+        "uname": "dd",
+        "address": "d",
+        "contact": "1234567898",
+        "email": "m@gmzil.com",
+        "pwd": "jhhshshhhs"
+      }
+    ],
+    "products": [
+      {
+        "url": "images/sculpture1.jpg",
+        "pname": "sculpture1",
+        "description": "Vibrant Blue Blossoms - A Burst of Creativity",
+        "category": "Sculpting",
+        "price": 500,
+        "id": "7ad8"
+      },
+      {
+        "url": "images/sculpture2.jpg",
+        "pname": "Ancient Echoes",
+        "description": "Mystic Faces - Echoes of Ancient Artistry",
+        "category": "Sculpting",
+        "price": 500,
+        "id": "ed51"
+      },
+      {
+        "url": "images/sculpture3.jpg",
+        "pname": "Timeless Elegance",
+        "description": "Elegant Curves - Timeless Beauty in Stone",
+        "category": "Sculpting",
+        "price": 500,
+        "id": "f3f9"
+      },
+      {
+        "url": "images/sculpture4.jpg",
+        "pname": "Whimsy Delight",
+        "description": "Whimsical Wonder - Playful and Intriguing",
+        "category": "Sculpting",
+        "price": 500,
+        "id": "5937"
+      },
+      {
+        "url": "images/sculpture5.jpg",
+        "pname": "Porcelain Grace",
+        "description": "Delicate Porcelain - Graceful Floral Pitche",
+        "category": "Sculpting",
+        "price": 500,
+        "id": "6844"
+      },
+      {
+        "url": "images/sculpture6.jpg",
+        "pname": "Intricate Harmony",
+        "description": "Intricate Swirls - Masterpiece of Precision",
+        "category": "Sculpting",
+        "price": 500,
+        "id": "11e5"
+      },
+      {
+        "url": "images/sculpture7.jpg",
+        "pname": "Poised Motion",
+        "description": "Poised Balance - Capturing Grace in Motion",
+        "category": "Sculpting",
+        "price": 500,
+        "id": "3c96"
+      },
+      {
+        "url": "images/sculpture8.jpg",
+        "pname": "Unity",
+        "description": "Human Connection - A Study in Togetherness",
+        "category": "Sculpting",
+        "price": 500,
+        "id": "e1b0"
+      },
+      {
+        "url": "images/sculpture9.jpg",
+        "pname": "Serene Deer",
+        "description": "Reclining Deer - Serenity in Sculpture",
+        "category": "Sculpting",
+        "price": 500,
+        "id": "44be"
+      },
+      {
+        "url": "images/sculpture10.jpg",
+        "pname": "Tender Embrace",
+        "description": "Loving Embrace - A Moment of Tenderness",
+        "category": "Sculpting",
+        "price": 500,
+        "id": "1a1b"
+      },
+      {
+        "url": "images/sculpture11.jpg",
+        "pname": "Abstract Vision",
+        "description": "Abstract Form - Creativity Unleashed",
+        "category": "Sculpting",
+        "price": 500,
+        "id": "d18f"
+      },
+      {
+        "url": "images/sculpture12.jpg",
+        "pname": "Elephant Play",
+        "description": "Elephant Duo - Playful Companions",
+        "category": "Sculpting",
+        "price": 500,
+        "id": "df72"
+      },
+      {
+        "url": "images/sculpture13.jpg",
+        "pname": "Flowing Waves",
+        "description": "Textured Waves - Flowing Elegance",
+        "category": "Sculpting",
+        "price": 500,
+        "id": "f51f"
+      },
+      {
+        "url": "images/sculpture14.jpg",
+        "pname": "Botanical Splendor",
+        "description": "Botanical Beauty - Nature's Artistry",
+        "category": "Sculpting",
+        "price": 500,
+        "id": "1ef8"
+      },
+      {
+        "url": "images/sculpture15.jpg",
+        "pname": "Bronze Strength",
+        "description": "Strength in Bronze - A Tribute to Resilience",
+        "category": "Sculpting",
+        "price": 500,
+        "id": "9eaf"
+      },
+      {
+        "url": "images/crochet1.JPG",
+        "pname": "Pink Penguin and Owl",
+        "description": "Adorable duo on rustic wood.",
+        "category": "Crochet",
+        "price": 500,
+        "id": "2f2d"
+      },
+      {
+        "url": "images/crochet2.jpg",
+        "pname": "Crochet Duck",
+        "description": "Quirky duck with a bright orange beak.",
+        "category": "Crochet",
+        "price": 500,
+        "id": "58eb"
+      },
+      {
+        "url": "images/crochet3.jpg",
+        "pname": "Crochet Elephant",
+        "description": "Charming elephant with rosy ears.",
+        "category": "Crochet",
+        "price": 500,
+        "id": "35b4"
+      },
+      {
+        "url": "images/crochet4.jpg",
+        "pname": "Crochet Flower",
+        "description": "Vibrant purple bloom in hand.",
+        "category": "Crochet",
+        "price": 500,
+        "id": "8570"
+      },
+      {
+        "url": "images/crochet5.jpg",
+        "pname": "Crochet Pineapple",
+        "description": "Tropical pineapple with lush green leaves.",
+        "category": "Crochet",
+        "price": 500,
+        "id": "a931"
+      },
+      {
+        "url": "images/crochet6.jpg",
+        "pname": "Crochet Avocado",
+        "description": "Delightful avocado half with a cute seed.",
+        "category": "Crochet",
+        "price": 500,
+        "id": "5f1d"
+      },
+      {
+        "url": "images/crochet7.jpg",
+        "pname": "Crochet Star",
+        "description": "Shining red star in hand.",
+        "category": "Crochet",
+        "price": 500,
+        "id": "45fd"
+      },
+      {
+        "url": "images/crochet8.jpg",
+        "pname": "Crochet Bear",
+        "description": "Sweet blue bear with a stylish red bow.",
+        "category": "Crochet",
+        "price": 500,
+        "id": "dfce"
+      },
+      {
+        "url": "images/crochet9.jpg",
+        "pname": "Chic Crochet Handbag",
+        "description": "A stylish white crocheted handbag with a purple bow.",
+        "category": "Crochet",
+        "price": 500,
+        "id": "d092"
+      },
+      {
+        "url": "images/crochet10.jpg",
+        "pname": "Pink Octopus Plushie",
+        "description": "A cute pink crocheted octopus with expressive black eyes.",
+        "category": "Crochet",
+        "price": 500,
+        "id": "9442"
+      },
+      {
+        "url": "images/crochet11.jpg",
+        "pname": "Penguin Pal",
+        "description": "An adorable black and white crocheted penguin with a sweet face.",
+        "category": "Crochet",
+        "price": 500,
+        "id": "a60e"
+      },
+      {
+        "url": "images/crochet12.jpg",
+        "pname": "Puppy Love",
+        "description": "A charming white crocheted dog with black ears and a red collar.",
+        "category": "Crochet",
+        "price": 500,
+        "id": "1ed6"
+      },
+      {
+        "url": "images/crochet13.jpg",
+        "pname": "Fishy Keychain",
+        "description": "A vibrant orange crocheted fish keychain.",
+        "category": "Crochet",
+        "price": 500,
+        "id": "e3f3"
+      },
+      {
+        "url": "images/crochet14.jpg",
+        "pname": "Buzzing Bee",
+        "description": "A cheerful yellow and black crocheted bee with white wings.",
+        "category": "Crochet",
+        "price": 500,
+        "id": "6a98"
+      },
+      {
+        "url": "images/photo1.JPG",
+        "pname": "Backlit Grass",
+        "description": "Close-up of tall grass with seed heads, backlit by the sun, creating a silhouette effect against a background of trees and sky.",
+        "category": "Photography",
+        "price": 500,
+        "id": "5093"
+      },
+      {
+        "url": "images/photo2.JPG",
+        "pname": "Sun Rays Through Clouds",
+        "description": "A scenic view of the sky with dramatic clouds and sun rays breaking through, creating a serene and ethereal atmosphere",
+        "category": "Photography",
+        "price": 500,
+        "id": "aa50"
+      },
+      {
+        "url": "images/photo3.JPG",
+        "pname": "Leaf with Water Droplets",
+        "description": "Close-up of a green leaf with water droplets, highlighting the freshness and detail of the leaf surface.",
+        "category": "Photography",
+        "price": 500,
+        "id": "63a5"
+      },
+      {
+        "url": "images/photo4.JPG",
+        "pname": "Sunset Through Trees",
+        "description": "Sunset view through tree branches, with the sky painted in hues of orange and purple, creating a tranquil evening scene.",
+        "category": "Photography",
+        "price": 500,
+        "id": "8237"
+      },
+      {
+        "url": "images/photo5.JPG",
+        "pname": "Pink Buds on Plant",
+        "description": "Close-up of a plant with pink buds, surrounded by green stems and leaves, showcasing the delicate beauty of new growth",
+        "category": "Photography",
+        "price": 500,
+        "id": "3587"
+      },
+      {
+        "url": "images/photo6.JPG",
+        "pname": "White Blossoms",
+        "description": "A plant with small white flowers, set against a blurred background, emphasizing the intricate details of the blossoms.",
+        "category": "Photography",
+        "price": 500,
+        "id": "09dc"
+      },
+      {
+        "url": "images/photo7.JPG",
+        "pname": "White Rose",
+        "description": "Close-up of a white rose in bloom, with dark green foliage in the background, highlighting the purity and elegance of the flower.",
+        "category": "Photography",
+        "price": 500,
+        "id": "9164"
+      },
+      {
+        "url": "images/photo8.JPG",
+        "pname": "Dewy Leaves",
+        "description": "Green leaves covered with water droplets, capturing the freshness and vibrancy of the foliage.",
+        "category": "Photography",
+        "price": 500,
+        "id": "74c9"
+      },
+      {
+        "url": "images/photo9.JPG",
+        "pname": "Heavenly Rays",
+        "description": "Sky with dramatic clouds and sun rays breaking through, creating a powerful and uplifting scene.",
+        "category": "Photography",
+        "price": 500,
+        "id": "4f91"
+      },
+      {
+        "url": "images/photo10.JPG",
+        "pname": "Twilight Over the Sea Link",
+        "description": "A stunning twilight view of Mumbai's Bandra-Worli Sea Link against a vibrant sky.",
+        "category": "Photography",
+        "price": 500,
+        "id": "745c"
+      },
+      {
+        "url": "images/photo11.JPG",
+        "pname": "Dewy Grass",
+        "description": "Close-up of grass blades with dew drops, highlighting the freshness of the morning.",
+        "category": "Photography",
+        "price": 500,
+        "id": "7551"
+      },
+      {
+        "url": "images/photo12.JPG",
+        "pname": "Ocean Sunset",
+        "description": "Sunset over the ocean, with the sun setting on the horizon and its reflection shimmering on the water.",
+        "category": "Photography",
+        "price": 500,
+        "id": "8f70"
+      },
+      {
+        "url": "images/photo13.JPG",
+        "pname": "Calm Sunset",
+        "description": "Sunset over a calm body of water, with the sky transitioning from orange to dark blue.",
+        "category": "Photography",
+        "price": 500,
+        "id": "1ed4"
+      },
+      {
+        "url": "images/photo14.JPG",
+        "pname": "Palm Tree Sunset",
+        "description": "Silhouette of a palm tree against a vibrant sunset sky, creating a tropical and serene atmosphere.",
+        "category": "Photography",
+        "price": 500,
+        "id": "73b1"
+      },
+      {
+        "url": "images/photo15.JPG",
+        "pname": "Dramatic Sunset",
+        "description": "Sunset with dramatic clouds, casting a warm glow over the landscape.",
+        "category": "Photography",
+        "price": 500,
+        "id": "8754"
+      },
+      {
+        "url": "images/painting1.jpg",
+        "pname": "Floral Delight",
+        "description": "A vibrant painting of colorful flowers.",
+        "category": "Painting",
+        "price": 500,
+        "id": "2474"
+      },
+      {
+        "url": "images/painting2.jpg",
+        "pname": "Abstract Art",
+        "description": "An abstract painting with bold colors and shapes.",
+        "category": "Painting",
+        "price": 500,
+        "id": "396c"
+      },
+      {
+        "url": "images/painting3.jpg",
+        "pname": "Sunset Landscape",
+        "description": "A serene painting of a sunset over a landscape.",
+        "category": "Painting",
+        "price": 500,
+        "id": "451d"
+      },
+      {
+        "url": "images/painting4.jpg",
+        "pname": "Color Splash",
+        "description": "An abstract painting with splashes of bright colors.",
+        "category": "Painting",
+        "price": 500,
+        "id": "cc05"
+      },
+      {
+        "url": "images/painting5.jpg",
+        "pname": "Nature's Beauty",
+        "description": "A painting capturing the beauty of nature.",
+        "category": "Painting",
+        "price": 500,
+        "id": "beb3"
+      },
+      {
+        "url": "images/painting6.jpg",
+        "pname": "Vivid Landscape",
+        "description": "A colorful painting of a vivid landscape.",
+        "category": "Painting",
+        "price": 500,
+        "id": "f5d9"
+      },
+      {
+        "url": "images/painting7.jpg",
+        "pname": "Seaside View",
+        "description": "A painting of a peaceful seaside view.",
+        "category": "Painting",
+        "price": 500,
+        "id": "e922"
+      },
+      {
+        "url": "images/painting8.jpg",
+        "pname": "Golden Sunset",
+        "description": "A painting of a golden sunset over the horizon.",
+        "category": "Painting",
+        "price": 500,
+        "id": "cb07"
+      },
+      {
+        "url": "images/painting9.jpg",
+        "pname": "Fruit Basket",
+        "description": "A painting of a basket filled with fruits.",
+        "category": "Painting",
+        "price": 500,
+        "id": "2c25"
+      },
+      {
+        "url": "images/painting10.jpg",
+        "pname": "Cityscape",
+        "description": "A painting of a bustling cityscape.",
+        "category": "Painting",
+        "price": 500,
+        "id": "740a"
+      },
+      {
+        "url": "images/painting11.jpg",
+        "pname": "Lighthouse Scene",
+        "description": "A painting of a lighthouse by the sea.",
+        "category": "Painting",
+        "price": 500,
+        "id": "700c"
+      },
+      {
+        "url": "images/painting12.jpg",
+        "pname": "Countryside",
+        "description": "A painting of a serene countryside scene.",
+        "category": "Painting",
+        "price": 500,
+        "id": "242d"
+      },
+      {
+        "url": "images/sketch1.jpg",
+        "pname": "Mandala Art",
+        "description": "Intricate mandala design with detailed patterns.",
+        "category": "Pen Sketch",
+        "price": 500,
+        "id": "0b28"
+      },
+      {
+        "url": "images/sketch2.jpg",
+        "pname": "Blue Mandala",
+        "description": "A striking blue mandala with geometric patterns.",
+        "category": "Pen Sketch",
+        "price": 500,
+        "id": "5ab7"
+      },
+      {
+        "url": "images/sketch3.jpg",
+        "pname": "Radiant Mandala",
+        "description": "A colorful mandala with vibrant hues.",
+        "category": "Pen Sketch",
+        "price": 500,
+        "id": "1e01"
+      },
+      {
+        "url": "images/sketch4.jpg",
+        "pname": "Architectural Sketch",
+        "description": "A detailed sketch of a building.",
+        "category": "Pen Sketch",
+        "price": 500,
+        "id": "7cb2"
+      },
+      {
+        "url": "images/sketch5.jpg",
+        "pname": "Floral Mandala",
+        "description": "A mandala with floral elements and rich colors.",
+        "category": "Pen Sketch",
+        "price": 500,
+        "id": "591f"
+      },
+      {
+        "url": "images/sketch6.jpg",
+        "pname": "Animal Doodle",
+        "description": "A whimsical doodle featuring various animals.",
+        "category": "Pen Sketch",
+        "price": 500,
+        "id": "83b5"
+      },
+      {
+        "url": "images/sketch7.jpg",
+        "pname": "Hummingbird Sketch",
+        "description": "A delicate sketch of a hummingbird in flight.",
+        "category": "Pen Sketch",
+        "price": 500,
+        "id": "8630"
+      },
+      {
+        "url": "images/sketch8.jpg",
+        "pname": "Eye Drawing",
+        "description": "A realistic drawing of a human eye.",
+        "category": "Pen Sketch",
+        "price": 500,
+        "id": "99d1"
+      },
+      {
+        "url": "images/sketch9.jpg",
+        "pname": "Geometric Pattern",
+        "description": "A colorful geometric pattern with intricate details.",
+        "category": "Pen Sketch",
+        "price": 500,
+        "id": "d2d2"
+      },
+      {
+        "url": "images/sketch10.jpg",
+        "pname": "Archway Sketch",
+        "description": "A detailed sketch of an ornate archway.",
+        "category": "Pen Sketch",
+        "price": 500,
+        "id": "696d"
+      },
+      {
+        "url": "images/sketch11.jpg",
+        "pname": "Detailed Mandala",
+        "description": "A highly detailed mandala with intricate designs.",
+        "category": "Pen Sketch",
+        "price": 500,
+        "id": "21d1"
+      },
+      {
+        "url": "images/sketch12.jpg",
+        "pname": "Patterned Maze",
+        "description": "A maze-like pattern with intricate details.",
+        "category": "Pen Sketch",
+        "price": 500,
+        "id": "bb4a"
+      },
+      {
+        "url": "images/sketch13.jpg",
+        "pname": "Green Mandala",
+        "description": "A green mandala with detailed patterns.",
+        "category": "Pen Sketch",
+        "price": 500,
+        "id": "c2c1"
+      },
+      {
+        "url": "images/sketch14.jpg",
+        "pname": "Serpent Sketch",
+        "description": "A detailed sketch of a coiled serpent.",
+        "category": "Pen Sketch",
+        "price": 500,
+        "id": "c66d"
+      }
+    ],
+    "cart": [
+      
+    ]
+  }

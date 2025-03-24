@@ -1,0 +1,161 @@
+body {
+    background-color: #f8f6f4; /* Light background color */
+    font-family: Arial, sans-serif;
+    height: 100vh;
+    
+  }
+  
+  .container {
+    margin-top: 20px;
+    padding: 20px;
+    border-radius: 0;
+  }
+  
+  .list-group-item {
+    background-color: #e3f4f4; /* Light blue background for list items */
+    color: #333;
+    border: none;
+  }
+  
+  .list-group-item:hover {
+    background-color: #d2e9e9; /* Slightly darker blue on hover */
+  }
+  
+  .card {
+    background-color: #ffffff; /* White background for cards */
+    border: 1px solid #d2e9e9; /* Border color */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    height: auto; /* Ensure card height is flexible */
+    width: 100%; /* Ensure card width is flexible */
+    position: relative; /* For positioning overlay */
+    overflow: hidden; /* Hide overflow */
+    transition: transform 0.3s; /* Smooth transition for hover effect */
+  }
+  
+  .card-img-top {
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    height: 200px; /* Adjust image height */
+    width: 100%; /* Ensure image width fits the card */
+    object-fit: cover; /* Ensure image covers the area */
+  }
+  
+  .card-body {
+    background-color: #e3f4f4; /* Light blue background for card body */
+    padding: 20px;
+    position: relative; /* For positioning overlay content */
+    min-height: 150px; /* Adjust this value as needed to ensure the button is visible */
+  }
+  
+  .card-title {
+    color: #333;
+  }
+  
+  .card-text {
+    color: #bababa;
+  }
+  
+  .text2{
+    color: black;
+  }
+  
+  .btn-primary {
+    background-color: #c4dfdf; /* Button background color */
+    border: none;
+    color: #7f7f7f;
+  }
+  
+  .btn-primary:hover {
+    background-color: #d2e9e9; /* Button hover color */
+    color: black;
+  }
+  
+  a {
+    text-decoration: none;
+    color: inherit;
+  }
+  
+  a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Dropdown styling */
+  .dropdown-container {
+    background-color: #e3f4f4; /* Light blue background for dropdown container */
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+  }
+  
+  .form-select {
+    background-color: #e3f4f4; /* Light blue background for dropdown */
+    border: 1px solid #d2e9e9; /* Border color */
+    color: #333; /* Text color */
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: border-color 0.3s, box-shadow 0.3s;
+  }
+  
+  .form-select:focus {
+    border-color: #c4dfdf; /* Border color on focus */
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+  }
+  
+  .form-select option {
+    background-color: #ffffff; /* White background for options */
+    color: #333; /* Text color for options */
+  }
+  
+  /* Additional dropdown styles */
+  .form-select:hover {
+    border-color: #c4dfdf; /* Border color on hover */
+  }
+  
+  .form-select:active {
+    background-color: #d2e9e9; /* Background color on active */
+  }
+  
+  .form-select::placeholder {
+    color: #666; /* Placeholder text color */
+    opacity: 1; /* Ensure full opacity for placeholder text */
+  }
+  
+  .form-select:disabled {
+    background-color: #f8f8f8; /* Background color for disabled state */
+    color: #999; /* Text color for disabled state */
+  }
+  
+  .form-select:disabled::placeholder {
+    color: #ccc; /* Placeholder text color for disabled state */
+  }
+  
+  /* Card overlay styling */
+  .card-overlay {
+    position: absolute;
+    top: -200px;
+    left: 0;
+    width: 100%;
+    height: 200px;
+    background-color: rgba(0, 0, 0, 0.8); /* Semi-transparent background */
+    color: #ffffff; /* White text color */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    opacity: 0; /* Initially hidden */
+    transition: opacity 0.3s; /* Smooth transition for hover effect */
+    padding: 20px;
+    box-sizing: border-box;
+  }
+  
+  .hover-card:hover .card-overlay {
+    opacity: 1; /* Show overlay on hover */
+  }
+  
+  .hover-card:hover {
+    transform: scale(1.05); /* Slightly enlarge card on hover */
+  }
+  
