@@ -1,14 +1,22 @@
-import React from "react";
-import "./header.css";
+import React, { useState, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
+import "./header.css";
 
 function Header() {
+  const [isLoggedIn, setIsLoggedIn] = useState(false);
   const navigate = useNavigate();
 
+  useEffect(() => {
+    const loggedInUser = localStorage.getItem("loggedInUser");
+    if (loggedInUser) {
+      setIsLoggedIn(true);
+    }
+  }, []);
+
   const handleLogout = () => {
-    console.log({localStorage});
     localStorage.removeItem("loggedInUser");
-    navigate("/login");
+    setIsLoggedIn(false);
+    navigate("/logout");
   };
 
   return (
@@ -24,36 +32,37 @@ function Header() {
           The Art Corner
         </a>
         <li className="nav-item">
-          <a className="nav-link active text-dark" href="/dashboard">
-            Dashboard
-          </a>
-        </li>
-        <li className="nav-item">
           <a className="nav-link text-dark" href="/products">
             Products
           </a>
         </li>
-
-        <li className="nav-item">
-          <a className="nav-link text-dark" href="/login">
-            Login
-          </a>
-        </li>
-
-        <li className="nav-item">
-          <a className="nav-link text-dark" href="/cart">
-            Cart
-          </a>
-        </li>
-        <li className="nav-item">
-          <a
-            className="nav-link text-dark"
-            href="/logout"
-            onClick={handleLogout}
-          >
-            Logout
-          </a>
-        </li>
+        {isLoggedIn ? (
+          <>
+            <li className="nav-item">
+              <a className="nav-link text-dark" href="/cart">
+                Cart
+              </a>
+            </li>
+            <li className="nav-item">
+              <span className="nav-link text-dark" onClick={handleLogout}>
+                Logout
+              </span>
+            </li>
+          </>
+        ) : (
+          <>
+            <li className="nav-item">
+              <a className="nav-link text-dark" href="/login">
+                Login
+              </a>
+            </li>
+            <li className="nav-item">
+              <a className="nav-link text-dark" href="/register">
+                Register
+              </a>
+            </li>
+          </>
+        )}
       </ul>
     </div>
   );
