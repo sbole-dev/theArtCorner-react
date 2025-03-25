@@ -619,5 +619,30 @@
       "id": "c66d"
     }
   ],
-  "cart": []
+  "cart": [
+    {
+      "id": "0271",
+      "userId": "e410",
+      "product": {
+        "url": "images/sculpture3.jpg",
+        "pname": "Timeless Elegance",
+        "description": "Elegant Curves - Timeless Beauty in Stone",
+        "category": "Sculpting",
+        "price": 500,
+        "id": "f3f9"
+      }
+    },
+    {
+      "id": "2c61",
+      "userId": "e410",
+      "product": {
+        "url": "images/crochet2.jpg",
+        "pname": "Crochet Duck",
+        "description": "Quirky duck with a bright orange beak.",
+        "category": "Crochet",
+        "price": 500,
+        "id": "58eb"
+      }
+    }
+  ]
 }

@@ -40,7 +40,7 @@ function Login() {
       if (usercheck) {
         setError("");
         localStorage.setItem("loggedInUser", JSON.stringify(usercheck));
-        console.log({localStorage});
+        console.log(localStorage.getItem("loggedInUser"));
         navigate("/dashboard");
         console.log("Login successful");
       } else {
@@ -48,6 +48,7 @@ function Login() {
       }
     } catch (error) {
       setError("Error logging in");
+      console.log(error);
     }
   };
 
