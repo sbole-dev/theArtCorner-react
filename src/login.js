@@ -16,6 +16,7 @@ function Login() {
         headers: {
           "Content-Type": "application/json",
         },
+
       });
 
       if (response.ok) {
@@ -33,9 +34,13 @@ function Login() {
   const loginUser = async (email, password) => {
     try {
       const fetchedUsers = await fetchUsers();
-      const usercheck = fetchedUsers.find(user => user.email === email && user.pwd === password);
+      const usercheck = fetchedUsers.find(
+        (user) => user.email === email && user.pwd === password
+      );
       if (usercheck) {
         setError("");
+        localStorage.setItem("loggedInUser", JSON.stringify(usercheck));
+        console.log({localStorage});
         navigate("/dashboard");
         console.log("Login successful");
       } else {
@@ -55,6 +60,10 @@ function Login() {
     loginUser(email, password);
   };
 
+  const handleGuestContinue = () => {
+    navigate("/"); 
+  };
+
   return (
     <section className="background-radial-gradient overflow-hidden">
       <div className="container px-4 py-5 px-md-5 text-center text-lg-start my-5">
@@ -66,7 +75,7 @@ function Login() {
               Lorem ipsum dolor sit amet, consectetur adipisicing elit.
               Temporibus, expedita iusto veniam atque...
             </p>
-            <button className="btn btn-outline-primary">
+            <button className="btn btn-outline-primary" onClick={handleGuestContinue}>
               Continue as Guest →
             </button>
           </div>

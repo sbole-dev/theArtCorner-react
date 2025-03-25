@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import Sidebar from "./sidebar";
 import MainBody from "./mainbody";
 import "./body.css";
+import Header from "./header";
 
 function Body() {
   const [selectedCategory, setCategory] = useState("");
