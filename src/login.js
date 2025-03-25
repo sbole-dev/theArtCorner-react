@@ -42,12 +42,14 @@ function Login() {
         localStorage.setItem("loggedInUser", JSON.stringify(usercheck));
         console.log({localStorage});
         navigate("/");
+
         console.log("Login successful");
       } else {
         setError("Invalid email or password");
       }
     } catch (error) {
       setError("Error logging in");
+      console.log(error);
     }
   };
 

@@ -13,19 +13,27 @@ function ProductList({ categorySidebar }) {
   ];
   const [selectedCategory, setSelectedCategory] = useState("");
   const [loading, setLoading] = useState(false);
-  const [products, setProducts] = useState();
-  const location = useLocation();
+
+  const [products, setProducts] = useState([]);
+  const [userCurrent, setUserCurrent] = useState();
+
   const getProducts = async () => {
-    await fetch("http://localhost:3000/products")
-      .then((response) => response.json())
-      .then((json) => {
-        setProducts(json);
-        console.log(json);
-      })
-      .catch((error) => {
-        console.error("Error fetching the JSON:", error);
+    await fetch('http://localhost:3000/products')
+      .then(response => response.json())
+      .then(json => { setProducts(json); console.log(json) })
+      .catch(error => {
+        console.error('Error fetching the JSON:', error);
       });
-  };
+  }
+
+
+  useEffect(() => {
+    const userC = localStorage.getItem("loggedInUser");
+    if (userC) {
+      setUserCurrent(JSON.parse(userC)); // Parse string to object
+      console.log(userCurrent);
+    }
+  }, []);
 
   useEffect(() => {
     getProducts();
@@ -39,8 +47,24 @@ function ProductList({ categorySidebar }) {
     setSelectedCategory(event.target.value);
   };
 
-  const addToCartByID = (id) => {
-    console.log(`Product with ID: ${id} added to cart.`);
+  const addToCartByID = async (product) => {
+    console.log(`Product with ID: ${product.id} added to cart.`);
+    try {
+      const response = await fetch("http://localhost:3000/cart", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({ userId: userCurrent.id, product }),
+      });
+      if (response.ok) {
+        window.alert("Added To Cart!");
+      } else {
+        alert("Not added");
+      }
+    } catch (error) {
+      console.log(error);
+    }
   };
 
   return (
@@ -67,6 +91,7 @@ function ProductList({ categorySidebar }) {
         {loading ? (
           <p>Loading...</p>
         ) : (
+
           (location.pathname == "/products" &&
             products
               ?.filter(
@@ -141,6 +166,7 @@ function ProductList({ categorySidebar }) {
                         Add to Cart
                       </button>
                     </div>
+
                   </div>
                 </div>
               )))
