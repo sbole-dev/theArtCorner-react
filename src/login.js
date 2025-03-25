@@ -16,6 +16,7 @@ function Login() {
         headers: {
           "Content-Type": "application/json",
         },
+
       });
 
       if (response.ok) {
@@ -39,6 +40,7 @@ function Login() {
       if (usercheck) {
         setError("");
         localStorage.setItem("loggedInUser", JSON.stringify(usercheck));
+        console.log({localStorage});
         navigate("/dashboard");
         console.log("Login successful");
       } else {

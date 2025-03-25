@@ -6,6 +6,7 @@ function Header() {
   const navigate = useNavigate();
 
   const handleLogout = () => {
+    console.log({localStorage});
     localStorage.removeItem("loggedInUser");
     navigate("/login");
   };
