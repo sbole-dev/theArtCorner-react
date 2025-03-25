@@ -41,7 +41,7 @@ function Login() {
         setError("");
         localStorage.setItem("loggedInUser", JSON.stringify(usercheck));
         console.log({localStorage});
-        navigate("/dashboard");
+        navigate("/");
         console.log("Login successful");
       } else {
         setError("Invalid email or password");

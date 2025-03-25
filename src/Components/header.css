@@ -1,9 +1,8 @@
 .header {
- 
-    top: 0;
     z-index: 1000; /* Ensures it stays above other content */
     background-color: white; /* Optional: Ensures the background is visible */
-  }
+    margin-bottom: 10px;
+}
 
 .navbar {
     background-color: rgb(196, 223, 223);

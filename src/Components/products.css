@@ -1,5 +1,5 @@
 body {
-    background-color: #f8f6f4; /* Light background color */
+    background-color: #ffffff; /* Light background color */
     font-family: Arial, sans-serif;
     height: 100vh;
     
@@ -9,6 +9,8 @@ body {
     margin-top: 20px;
     padding: 20px;
     border-radius: 0;
+    /* width: 100%; */
+
   }
   
   .list-group-item {
@@ -45,25 +47,31 @@ body {
     background-color: #e3f4f4; /* Light blue background for card body */
     padding: 20px;
     position: relative; /* For positioning overlay content */
-    min-height: 150px; /* Adjust this value as needed to ensure the button is visible */
+    min-height: 200px; /* Adjust this value as needed to ensure the button is visible */
+    max-height: 410px;
   }
   
   .card-title {
     color: #333;
+    margin-top: 5px;
   }
   
   .card-text {
     color: #bababa;
+    font-size: 15px;
+    padding: 0px;
   }
   
   .text2{
     color: black;
+    font-size: 12px;
   }
   
   .btn-primary {
     background-color: #c4dfdf; /* Button background color */
     border: none;
     color: #7f7f7f;
+    margin-top: 0px;
   }
   
   .btn-primary:hover {
@@ -85,7 +93,7 @@ body {
     background-color: #e3f4f4; /* Light blue background for dropdown container */
     padding: 10px;
     border-radius: 5px;
-    margin-bottom: 20px;
+    /* margin-bottom: 20px; */
   }
   
   .form-select {
@@ -157,5 +165,10 @@ body {
   
   .hover-card:hover {
     transform: scale(1.05); /* Slightly enlarge card on hover */
+  }
+
+  .card-desc{
+    font-size: 5px;
+    color: red;
   }
   

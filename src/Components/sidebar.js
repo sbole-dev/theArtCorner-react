@@ -8,7 +8,7 @@ function Sidebar({ setCategory }) {
       <ul className="nav flex-column">
         {["Painting", "Crochet", "Sculpting", "Photography", "Pen Sketch"].map((category) => (
           <li key={category} className="nav-item">
-            <button className="nav-link btn btn-light w-100" onClick={() => setCategory(category)}>
+            <button className="nav-link btn btn-light w-100 text-start" onClick={() => setCategory(category)}>
               {category}
             </button>
           </li>
